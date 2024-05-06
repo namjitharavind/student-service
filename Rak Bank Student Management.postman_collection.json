@@ -1,0 +1,671 @@
+{
+	"info": {
+		"_postman_id": "7a9f2b34-2eb5-430c-96bc-bb80caa2423d",
+		"name": "Rak Bank Student Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10265567"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Create Student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"uuid": "c23d5a9f-b8ba-4961-9850-4b7f9a1ddd47"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "77b09434-ef1c-4681-98dd-3db500c4581d"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Nathasha Namjithaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssss\",\n  \"grade\": \"UKGd\",\n  \"mobile\": \"+971 509834759\",\n  \"school\": \"Gems Legacy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/student-service/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"student-service",
+								"student"
+							]
+						},
+						"description": "Create a student."
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"grade\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"school\": \"<string>\",\n  \"id\": \"<uuid>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/student",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"student"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"grade\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"school\": \"<string>\",\n  \"id\": \"<uuid>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/student",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"student"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "\"<object>\""
+						},
+						{
+							"name": "Unexpected error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"grade\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"school\": \"<string>\",\n  \"id\": \"<uuid>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/student",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"student"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "\"<object>\""
+						}
+					]
+				},
+				{
+					"name": "Get Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9080/student?grade=UKG",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"student"
+							],
+							"query": [
+								{
+									"key": "grade",
+									"value": "UKG"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Student By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9080/student-service/student/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"student-service",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fee",
+			"item": [
+				{
+					"name": "Create Fee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "8de30d43-fb56-4f8b-918d-87aa93391ef2"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"uuid": "2296664b-0d4a-41e7-bb8a-802ef8d71ad5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"APR 2025 TUTION FEE\",\n    \"type\": \"TUTION\",\n    \"currency\": \"AED\",\n    \"amount\": 833.00,\n    \"creationDate\": \"2025-04-01\",\n    \"dueDate\": \"2025-04-20\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9081/fee-service/fee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"fee-service",
+								"fee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Fee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9081/fee-service/fee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"fee-service",
+								"fee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actuator Retry Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9081/fee-service/actuator/retryevents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"fee-service",
+								"actuator",
+								"retryevents"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student Fee",
+			"item": [
+				{
+					"name": "Get Student Fee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9081/fee-service/student-fee?studentId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"fee-service",
+								"student-fee"
+							],
+							"query": [
+								{
+									"key": "studentId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Fee to all student by Grade",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "d917fea6-7c68-4fdd-bc9f-fb50981f4a91"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"uuid": "8bbe7ad0-f8d1-4fc7-94a2-5e9db619f417"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"feeId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9081/fee-service/student-fee/assign-by-grade/UKG",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"fee-service",
+								"student-fee",
+								"assign-by-grade",
+								"UKG"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Student Fee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"uuid": "b8fb601d-7a7a-498f-a07e-85c92168dc6e"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"uuid": "29418b79-df89-4d66-b085-4be4a450e5a8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\": 1,\n    \"totalAmount\": 1642.0,\n    \"paidAmount\": 1000.00,\n    \"studentFees\": [\n        {\n            \"studentFeeId\": 1\n        },\n        {\n            \"studentFeeId\": 5\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9081/fee-service/student-fee/status-update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"fee-service",
+								"student-fee",
+								"status-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Student Fee By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9081/fee-service/student-fee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"fee-service",
+								"student-fee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchase",
+			"item": [
+				{
+					"name": "Purchase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\": 1,\n    \"currency\": \"AED\",\n    \"customAmount\": 0,\n    \"purchaseFees\": [\n        {\n            \"feeId\": 1\n        },\n        {\n            \"feeId\": 5\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9082/purchase-service/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9082",
+							"path": [
+								"purchase-service",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Purchase custom amount update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customAmount\": 1000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9082/purchase-service/purchase/custom-amount-update/b73dd25b-fc06-4955-80f6-c2f50f98600b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9082",
+							"path": [
+								"purchase-service",
+								"purchase",
+								"custom-amount-update",
+								"b73dd25b-fc06-4955-80f6-c2f50f98600b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Purchase status update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"PAID\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9082/purchase-service/purchase/status-update/7f9e4a4b-10ef-4868-90a9-8648bd346b56",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9082",
+							"path": [
+								"purchase-service",
+								"purchase",
+								"status-update",
+								"7f9e4a4b-10ef-4868-90a9-8648bd346b56"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Purchase By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9082/purchase-service/purchase/157f09b6-d30d-44ab-b450-afc297b53325",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9082",
+							"path": [
+								"purchase-service",
+								"purchase",
+								"157f09b6-d30d-44ab-b450-afc297b53325"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Purchase By StudentId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9082/purchase-service/purchase/student/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9082",
+							"path": [
+								"purchase-service",
+								"purchase",
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\": 1,\n    \"purchaseId\": \"b73dd25b-fc06-4955-80f6-c2f50f98600b\",\n    \"paymentMethod\": \"CREDIT_DEBIT_CARD\",\n    \"creditCard\":{\n        \"number\":\"4177771158070077\",\n        \"expiry\":\"02/27\",\n        \"cvv\":\"123\",\n        \"holderName\":\"Namjith Aravind\",\n        \"type\":\"VISA\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9083/payment-service/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9083",
+							"path": [
+								"payment-service",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status update callback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactionId\": \"b69589e1-dde5-4b4e-8fd3-d5679d52b9d8\",\n    \"transactionReferenceId\": \"b69589e1-dde5-4b4e-8fd3-d5679d52b9d8\",\n    \"transactionStatus\": \"CAPTURED\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9083/payment-service/payment/status-update-callback",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9083",
+							"path": [
+								"payment-service",
+								"payment",
+								"status-update-callback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get TransactionDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9083/payment-service/payment/6913c028-7ab6-4c8a-9683-e408e505084b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9083",
+							"path": [
+								"payment-service",
+								"payment",
+								"6913c028-7ab6-4c8a-9683-e408e505084b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
