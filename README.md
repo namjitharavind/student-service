@@ -50,7 +50,7 @@
 
 <table>
 <tr>
-><td> Order </td><td> Name </td <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
+><td> Order </td><td> Name </td> <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
 </tr>
 <tr>
 <td> 1 </td>
