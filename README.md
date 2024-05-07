@@ -95,7 +95,26 @@
 
 </td>
 </tr>
+<tr>
+<td> 2 </td>
+<td> Get a Student By Id </td>
+<td> GET </td>
+<td>  </td>
+<td> 200 </td>
+<td>
 
+```json
+{
+  "id": 1,
+  "name": "Mahendra Singh Dhoni",
+  "grade": "UKG",
+  "mobile": "+971 509834777",
+  "school": "Gems Legacy"
+}
+```
+
+</td>
+</tr>
 </table>
 
 
