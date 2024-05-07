@@ -1,6 +1,6 @@
 # Student Service
 
-### Student management system is a collection of microservice applications to full fill the school fee collection of multiple schools.
+### Student management system is a collection of microservice applications to full fill the school fee collection of multiple schools. All the microservice are easily scalable , fault tolerant and fault resilient. 
 
 ![img_6.png](img_6.png)
 
