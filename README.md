@@ -9,17 +9,17 @@
 - Payment Gateway Service : https://github.com/namjitharavind/payment-gateway-service.git
 
 ### Design Patterns 
-
-## Architecture
-![img_6.png](img_6.png)
-- Resilience Patterns 
-  - Timeout 
+- Resilience Patterns
+  - Timeout
   - Retry
   - Circuit Breaker
-- Observability Patterns : 
+- Observability Patterns :
   - Tracing
   - Logging
   - Metrics
+## Architecture
+![img_6.png](img_6.png)
+
 
 
 
