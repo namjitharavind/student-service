@@ -47,18 +47,14 @@
 
 ## Sample API Flow with proper request  and response.
 
-### 1. Get all Students
-#### Students are already added through data.sql.
-| Order        | API URL      | HTTP METHOD |  
-|--------------|--------------|-------------|
-| 1            | http://localhost:9080/student-service/student/grade/UKG | GET | 
 
 <table>
 <tr>
-<td> Order </td> <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
+><td> Order </td><td> Name </td <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
 </tr>
 <tr>
 <td> 1 </td>
+<td> Get all students </td>
 <td> GET </td>
 <td>  </td>
 <td> 200 </td>
