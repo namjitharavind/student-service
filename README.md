@@ -6,4 +6,4 @@
 
 ![img.png](img.png)
 ### 1. Create a Fee and Assign those fee to all students by grade.
-![img_5.png](img_5.png)![img_3.png](img_3.png)
+![img_5.png](img_5.png)
