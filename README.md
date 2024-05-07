@@ -47,10 +47,11 @@
 
 ## Sample API Flow with proper request  and response.
 
+### Note : Students and Fees are already added through data.sql. So we can start from Assign fee to students API.
 
 <table>
 <tr>
-><td> Order </td><td> Name </td> <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
+<td> Order </td><td> Name </td> <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
 </tr>
 <tr>
 <td> 1 </td>
