@@ -20,3 +20,8 @@
 ### 4. Payment Gateway Callback to Payment service
 ![img_9.png](img_9.png)
 
+
+### 5. Purchase status api logic in Fee service
+
+![img_10.png](img_10.png)
+
