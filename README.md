@@ -18,6 +18,7 @@
 ![img_8.png](img_8.png)
 
 ### 4. Payment Gateway Callback to Payment service
+    Since this service idempotent, even though if the payment service or its downstream application failed, We can call gain manually or from another retry batch service which call exponentially
 ![img_9.png](img_9.png)
 
 
