@@ -240,7 +240,7 @@
 </td>
 </tr>
 <tr>
-<td> 2 </td>
+<td> 4 </td>
 <td> Get a Fee By Id </td>
 <td>http://localhost:9081/fee-service/fee/1</td>
 <td> GET </td>
@@ -250,11 +250,13 @@
 
 ```json
 {
-  "type": "about:blank",
-  "title": "Bad Request",
-  "status": 400,
-  "detail": "Failed to convert 'id' with value: 'id'",
-  "instance": "/fee-service/fee/id"
+  "id": 1,
+  "name": "APR 2024 TUTION FEE",
+  "type": "TUTION",
+  "currency": "AED",
+  "amount": 833.0,
+  "creationDate": "2024-04-01T00:00:00+04:00",
+  "dueDate": "2024-04-20T00:00:00+04:00"
 }
 ```
 
@@ -265,10 +267,16 @@
 <td> Assign Fee to all student by Grade </td>
 <td>http://localhost:9081/fee-service/student-fee/assign-by-grade/UKG</td>
 <td> POST </td>
-<td> 
+<td>
 ```json
 {
-    "feeId": 2
+  "id": 1,
+  "name": "APR 2024 TUTION FEE",
+  "type": "TUTION",
+  "currency": "AED",
+  "amount": 833.0,
+  "creationDate": "2024-04-01T00:00:00+04:00",
+  "dueDate": "2024-04-20T00:00:00+04:00"
 }
 ```
 </td>
