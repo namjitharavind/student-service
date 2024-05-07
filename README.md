@@ -18,7 +18,7 @@
 ![img_8.png](img_8.png)
 
 ### 4. Payment Gateway Callback to Payment service
-####   Since this service is idempotent, even though if the payment service or its downstream application failed, We can call the payment service again manually or from another retry batch service which call exponentially
+####   Since this service is idempotent, even though if the payment service or its downstream application failed, We can call the payment service again manually or from another retry batch service which call exponentially. In this case even if the payment-service is not yet received any callback from payment-gateway-service, payment service will call the gateway service with the transactionId to get the transaction status. Based on this payment service can call its downstream application which purchase service here.
 ![img_9.png](img_9.png)
 
 
