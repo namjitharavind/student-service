@@ -268,15 +268,10 @@
 <td>http://localhost:9081/fee-service/student-fee/assign-by-grade/UKG</td>
 <td> POST </td>
 <td>
+
 ```json
 {
-  "id": 1,
-  "name": "APR 2024 TUTION FEE",
-  "type": "TUTION",
-  "currency": "AED",
-  "amount": 833.0,
-  "creationDate": "2024-04-01T00:00:00+04:00",
-  "dueDate": "2024-04-20T00:00:00+04:00"
+    "feeId": 2
 }
 ```
 </td>
