@@ -260,6 +260,84 @@
 
 </td>
 </tr>
+<tr>
+<td> 5 </td>
+<td> Assign Fee to all student by Grade </td>
+<td>http://localhost:9081/fee-service/student-fee/assign-by-grade/UKG</td>
+<td> POST </td>
+<td> 
+```json
+{
+    "feeId": 2
+}
+```
+</td>
+<td> 200 </td>
+<td>
+
+```json
+[
+  {
+    "id": 5,
+    "studentId": 1,
+    "feeId": 2,
+    "status": "PENDING",
+    "amount": null,
+    "paidAmount": null,
+    "paidDate": null,
+    "creationDate": "2024-05-06T15:45:39.16534+04:00",
+    "name": null,
+    "type": null,
+    "currency": null,
+    "dueDate": null
+  },
+  {
+    "id": 6,
+    "studentId": 2,
+    "feeId": 2,
+    "status": "PENDING",
+    "amount": null,
+    "paidAmount": null,
+    "paidDate": null,
+    "creationDate": "2024-05-06T15:45:39.16618+04:00",
+    "name": null,
+    "type": null,
+    "currency": null,
+    "dueDate": null
+  },
+  {
+    "id": 7,
+    "studentId": 3,
+    "feeId": 2,
+    "status": "PENDING",
+    "amount": null,
+    "paidAmount": null,
+    "paidDate": null,
+    "creationDate": "2024-05-06T15:45:39.166909+04:00",
+    "name": null,
+    "type": null,
+    "currency": null,
+    "dueDate": null
+  },
+  {
+    "id": 8,
+    "studentId": 4,
+    "feeId": 2,
+    "status": "PENDING",
+    "amount": null,
+    "paidAmount": null,
+    "paidDate": null,
+    "creationDate": "2024-05-06T15:45:39.167525+04:00",
+    "name": null,
+    "type": null,
+    "currency": null,
+    "dueDate": null
+  }
+]
+```
+
+</td>
+</tr>
 </table>
 
 
