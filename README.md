@@ -8,9 +8,19 @@
 - Payment Service : https://github.com/namjitharavind/payment-service.git
 - Payment Gateway Service : https://github.com/namjitharavind/payment-gateway-service.git
 
+### Design Patterns 
 
 ## Architecture
 ![img_6.png](img_6.png)
+- Resilience Patterns 
+  - Timeout 
+  - Retry
+  - Circuit Breaker
+- Observability Patterns : 
+  - Tracing
+  - Logging
+  - Metrics
+
 
 
 ### 1. Create a Fee and Assign those fee to all students by grade.
