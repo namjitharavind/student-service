@@ -67,6 +67,8 @@
 <td>  </td>
 <td> 200 </td>
 <td>
+<details close>
+  <summary>Json</summary>
 
 ```json
 [
@@ -100,7 +102,7 @@
   }
 ]
 ```
-
+</details>
 </td>
 </tr>
 <tr>
@@ -111,7 +113,8 @@
 <td>  </td>
 <td> 200 </td>
 <td>
-
+<details close>
+  <summary>Json</summary>
 ```json
 {
   "id": 1,
@@ -121,7 +124,7 @@
   "school": "Gems Legacy"
 }
 ```
-
+</details>
 </td>
 </tr>
 <tr>
@@ -132,6 +135,8 @@
 <td>  </td>
 <td> 200 </td>
 <td>
+<details close>
+  <summary>Json</summary>
 
 ```json
 [
@@ -236,7 +241,7 @@
   }
 ]
 ```
-
+</details>
 </td>
 </tr>
 <tr>
@@ -247,6 +252,8 @@
 <td>  </td>
 <td> 200 </td>
 <td>
+<details close>
+  <summary>Json</summary>
 
 ```json
 {
@@ -259,7 +266,7 @@
   "dueDate": "2024-04-20T00:00:00+04:00"
 }
 ```
-
+</details>
 </td>
 </tr>
 <tr>
@@ -268,15 +275,20 @@
 <td>http://localhost:9081/fee-service/student-fee/assign-by-grade/UKG</td>
 <td> POST </td>
 <td>
+<details close>
+  <summary>Json</summary>
 
 ```json
 {
     "feeId": 2
 }
 ```
+</details>
 </td>
 <td> 200 </td>
 <td>
+<details close>
+  <summary>Json</summary>
 
 ```json
 [
@@ -339,16 +351,19 @@
 ]
 ```
 
+</details>
 </td>
 </tr>
 <tr>
 <td> 6 </td>
-<td> Get Students Pending Fee </td>
+<td> Get Students Unpaid Fee </td>
 <td>http://localhost:9081/fee-service/student-fee?studentId=1&isPaid=false</td>
 <td> GET </td>
 <td>  </td>
 <td> 200 </td>
 <td>
+<details close>
+  <summary>Json</summary>
 
 ```json
 [
@@ -383,6 +398,7 @@
 ]
 ```
 
+</details>
 </td>
 </tr>
 </table>
