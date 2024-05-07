@@ -501,6 +501,193 @@
 </details>
 </td>
 </tr>
+
+<tr>
+<td> 9 </td>
+<td> Purchase </td>
+<td>http://localhost:9082/purchase-service/purchase</td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": "48a85513-f081-497e-b402-2d7bd11caaf1",
+  "studentId": 1,
+  "studentName": "Mahendra Singh Dhoni",
+  "schoolName": "Gems Legacy",
+  "totalAmount": 1642.0,
+  "customAmount": 1642.0,
+  "currency": "AED",
+  "creationDate": "2024-05-06T15:46:04.299712+04:00",
+  "paidDate": null,
+  "status": "CREATED",
+  "purchaseFees": [
+    {
+      "id": 1,
+      "feeId": 1,
+      "feeName": "APR 2024 TUTION FEE",
+      "feeAmount": 833.0,
+      "feeCurrency": "AED"
+    },
+    {
+      "id": 2,
+      "feeId": 5,
+      "feeName": "MAY 2024 TUTION FEE",
+      "feeAmount": 809.0,
+      "feeCurrency": "AED"
+    }
+  ]
+}
+```
+
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": "02179a18-88cb-48fd-a845-ef505a68a57b",
+  "studentId": 1,
+  "studentName": "Mahendra Singh Dhoni",
+  "schoolName": "Gems Legacy",
+  "totalAmount": 1642.0,
+  "customAmount": 1642.0,
+  "currency": "AED",
+  "creationDate": "2024-05-07T16:45:47.962866+04:00",
+  "paidDate": null,
+  "status": "CREATED",
+  "purchaseFees": [
+    {
+      "id": 1,
+      "feeId": 1,
+      "feeName": "MAY 2024 TUTION FEE",
+      "feeAmount": 809.0,
+      "feeCurrency": "AED"
+    },
+    {
+      "id": 2,
+      "feeId": 5,
+      "feeName": "APR 2024 TUTION FEE",
+      "feeAmount": 833.0,
+      "feeCurrency": "AED"
+    }
+  ]
+}
+```
+
+</details>
+</td>
+</tr>
+
+<tr>
+<td> 10 </td>
+<td> Purchase Custom Amount Update </td>
+<td>http://localhost:9082/purchase-service/purchase/custom-amount-update/48a85513-f081-497e-b402-2d7bd11caaf1</td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "customAmount": 1000
+}
+```
+
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": "02179a18-88cb-48fd-a845-ef505a68a57b",
+  "studentId": 1,
+  "studentName": "Mahendra Singh Dhoni",
+  "schoolName": "Gems Legacy",
+  "totalAmount": 1642.0,
+  "customAmount": 1000.0,
+  "currency": "AED",
+  "creationDate": "2024-05-07T16:45:47.962866+04:00",
+  "paidDate": null,
+  "status": "CREATED",
+  "purchaseFees": [
+    {
+      "id": 1,
+      "feeId": 1,
+      "feeName": "MAY 2024 TUTION FEE",
+      "feeAmount": 809.0,
+      "feeCurrency": "AED"
+    },
+    {
+      "id": 2,
+      "feeId": 5,
+      "feeName": "APR 2024 TUTION FEE",
+      "feeAmount": 833.0,
+      "feeCurrency": "AED"
+    }
+  ]
+}
+```
+
+</details>
+</td>
+</tr>
+
+<tr>
+<td> 11 </td>
+<td> Get Purchase By Id </td>
+<td>http://localhost:9082/purchase-service/purchase/02179a18-88cb-48fd-a845-ef505a68a57b</td>
+<td> GET </td>
+<td> 
+
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": "02179a18-88cb-48fd-a845-ef505a68a57b",
+  "studentId": 1,
+  "studentName": "Mahendra Singh Dhoni",
+  "schoolName": "Gems Legacy",
+  "totalAmount": 1642.0,
+  "customAmount": 1000.0,
+  "currency": "AED",
+  "creationDate": "2024-05-07T16:45:47.962866+04:00",
+  "paidDate": null,
+  "status": "CREATED",
+  "purchaseFees": [
+    {
+      "id": 1,
+      "feeId": 1,
+      "feeName": "MAY 2024 TUTION FEE",
+      "feeAmount": 809.0,
+      "feeCurrency": "AED"
+    },
+    {
+      "id": 2,
+      "feeId": 5,
+      "feeName": "APR 2024 TUTION FEE",
+      "feeAmount": 833.0,
+      "feeCurrency": "AED"
+    }
+  ]
+}
+```
+
+</details>
+</td>
+</tr>
 </table>
 
 
