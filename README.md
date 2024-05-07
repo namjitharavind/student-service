@@ -44,3 +44,45 @@
 
 ![img_10.png](img_10.png)
 
+
+## Sample API Flow with proper request  and response.
+
+### 1. Get all Students
+| Order        | API URL      | HTTP METHOD |  
+|--------------|--------------|-------------|
+| 1            | http://localhost:9080/student-service/student/grade/UKG | GET | ds           | sds           |
+
+#### Response Body :
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Mahendra Singh Dhoni",
+    "grade": "UKG",
+    "mobile": "+971 509834777",
+    "school": "Gems Legacy"
+  },
+  {
+    "id": 2,
+    "name": "Sourav Ganguly",
+    "grade": "UKG",
+    "mobile": "+971 509834888",
+    "school": "Gems Legacy"
+  },
+  {
+    "id": 3,
+    "name": "Sachin Tendulkar",
+    "grade": "UKG",
+    "mobile": "+971 509834999",
+    "school": "Gems Legacy"
+  },
+  {
+    "id": 4,
+    "name": "Sanju Samson",
+    "grade": "UKG",
+    "mobile": "+971 509834111",
+    "school": "Gems Legacy"
+  }
+]
+```
