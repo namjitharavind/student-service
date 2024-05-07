@@ -34,6 +34,42 @@
 </tr>
 <tr>
 <td> 1 </td>
+<td> Create Student </td>
+<td> http://localhost:9080/student-service/student </td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "name": "Rahul Krishna",
+  "grade": "UKG",
+  "mobile": "+971 509834759",
+  "school": "Gems Legacy"
+}
+```
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": 9,
+  "name": "Rahul Krishna",
+  "grade": "UKG",
+  "mobile": "+971 509834759",
+  "school": "Gems Legacy"
+}
+```
+</details>
+</td>
+</tr>
+<tr>
+<td> 2 </td>
 <td> Get all students by Grade </td>
 <td> http://localhost:9080/student-service/student/grade/UKG </td>
 <td> GET </td>
@@ -79,7 +115,7 @@
 </td>
 </tr>
 <tr>
-<td> 2 </td>
+<td> 3 </td>
 <td> Get a Student By Id </td>
 <td> http://localhost:9080/student-service/student/1 </td>
 <td> GET </td>
@@ -102,7 +138,45 @@
 </td>
 </tr>
 <tr>
-<td> 3 </td>
+<td> 4 </td>
+<td> Create Fee </td>
+<td> http://localhost:9081/fee-service/fee </td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "name": "APR 2025 TUTION FEE",
+  "type": "TUTION",
+  "currency": "AED",
+  "amount": 833.00
+}
+```
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": 12,
+  "name": "APR 2025 TUTION FEE",
+  "type": "TUTION",
+  "currency": "AED",
+  "amount": 833.0,
+  "creationDate": "2024-05-07T17:27:28.307043+04:00",
+  "dueDate": "2024-05-07T17:27:28.307062+04:00"
+}
+```
+</details>
+</td>
+</tr>
+<tr>
+<td> 5 </td>
 <td> Get all Fees </td>
 <td>http://localhost:9081/fee-service/fee</td>
 <td> GET </td>
@@ -219,7 +293,7 @@
 </td>
 </tr>
 <tr>
-<td> 4 </td>
+<td> 6 </td>
 <td> Get a Fee By Id </td>
 <td>http://localhost:9081/fee-service/fee/1</td>
 <td> GET </td>
@@ -244,7 +318,7 @@
 </td>
 </tr>
 <tr>
-<td> 5 </td>
+<td> 7 </td>
 <td> Assign Fee to all student by Grade </td>
 <td>http://localhost:9081/fee-service/student-fee/assign-by-grade/UKG</td>
 <td> POST </td>
@@ -329,7 +403,7 @@
 </td>
 </tr>
 <tr>
-<td> 6 </td>
+<td> 8 </td>
 <td> Get Students Unpaid Fee </td>
 <td>http://localhost:9081/fee-service/student-fee?studentId=1&isPaid=false</td>
 <td> GET </td>
@@ -376,7 +450,7 @@
 </td>
 </tr>
 <tr>
-<td> 7 </td>
+<td> 9 </td>
 <td> Get Students Fee By Id </td>
 <td>http://localhost:9081/fee-service/student-fee/1</td>
 <td> GET </td>
@@ -408,7 +482,7 @@
 </tr>
 
 <tr>
-<td> 8 </td>
+<td> 10 </td>
 <td> Create Purchase </td>
 <td>http://localhost:9082/purchase-service/purchase</td>
 <td> POST </td>
@@ -476,7 +550,7 @@
 </tr>
 
 <tr>
-<td> 9 </td>
+<td> 11 </td>
 <td> Purchase </td>
 <td>http://localhost:9082/purchase-service/purchase</td>
 <td> POST </td>
@@ -558,7 +632,7 @@
 </tr>
 
 <tr>
-<td> 10 </td>
+<td> 12 </td>
 <td> Purchase Custom Amount Update </td>
 <td>http://localhost:9082/purchase-service/purchase/custom-amount-update/48a85513-f081-497e-b402-2d7bd11caaf1</td>
 <td> POST </td>
@@ -615,7 +689,7 @@
 </tr>
 
 <tr>
-<td> 11 </td>
+<td> 13 </td>
 <td> Get Purchase By Id </td>
 <td>http://localhost:9082/purchase-service/purchase/02179a18-88cb-48fd-a845-ef505a68a57b</td>
 <td> GET </td>
@@ -663,7 +737,7 @@
 </tr>
 
 <tr>
-<td> 12 </td>
+<td> 14 </td>
 <td> Get all Purchase By StudentId </td>
 <td>http://localhost:9082/purchase-service/purchase/student/1</td>
 <td> GET </td>
@@ -712,7 +786,7 @@
 </td>
 </tr>
 <tr>
-<td> 13 </td>
+<td> 15 </td>
 <td> Process Payment </td>
 <td>http://localhost:9083/payment-service/payment</td>
 <td> POST </td>
@@ -767,7 +841,7 @@
 </td>
 </tr>
 <tr>
-<td> 14 </td>
+<td> 16 </td>
 <td> Payment Callback to Payment Service from Payment Gateway Service </td>
 <td>http://localhost:9083/payment-service/payment/status-update-callback</td>
 <td> POST </td>
@@ -794,7 +868,7 @@ SUCCESS
 </td>
 </tr>
 <tr>
-<td> 15 </td>
+<td> 17 </td>
 <td> Payment Callback to Purchase Service from Payment Service </td>
 <td>http://localhost:9082/purchase-service/purchase/status-update/02179a18-88cb-48fd-a845-ef505a68a57b</td>
 <td> POST </td>
@@ -850,7 +924,7 @@ SUCCESS
 </td>
 </tr>
 <tr>
-<td> 16 </td>
+<td> 18 </td>
 <td> Payment Callback to Fee Service from Purchase Service </td>
 <td>http://localhost:9081/fee-service/student-fee/status-update</td>
 <td> POST </td>
