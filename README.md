@@ -793,6 +793,157 @@
 </details>
 </td>
 </tr>
+<tr>
+<td> 14 </td>
+<td> Payment Callback to Payment Service from Payment Gateway Service </td>
+<td>http://localhost:9083/payment-service/payment/status-update-callback</td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "transactionId": "b69589e1-dde5-4b4e-8fd3-d5679d52b9d8",
+  "transactionReferenceId": "b69589e1-dde5-4b4e-8fd3-d5679d52b9d8",
+  "transactionStatus": "CAPTURED"
+}
+```
+
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+SUCCESS
+</details>
+</td>
+</tr>
+<tr>
+<td> 15 </td>
+<td> Payment Callback to Purchase Service from Payment Service </td>
+<td>http://localhost:9082/purchase-service/purchase/status-update/02179a18-88cb-48fd-a845-ef505a68a57b</td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "status": "PAID"
+}
+```
+
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+
+```json
+{
+  "id": "02179a18-88cb-48fd-a845-ef505a68a57b",
+  "studentId": 1,
+  "studentName": "Mahendra Singh Dhoni",
+  "schoolName": "Gems Legacy",
+  "totalAmount": 1642.0,
+  "customAmount": 1000.0,
+  "currency": "AED",
+  "creationDate": "2024-05-07T16:45:47.962866+04:00",
+  "paidDate": "2024-05-07T16:45:47.962866+04:00",
+  "status": "PAID",
+  "purchaseFees": [
+    {
+      "id": 1,
+      "feeId": 1,
+      "feeName": "MAY 2024 TUTION FEE",
+      "feeAmount": 809.0,
+      "feeCurrency": "AED"
+    },
+    {
+      "id": 2,
+      "feeId": 5,
+      "feeName": "APR 2024 TUTION FEE",
+      "feeAmount": 833.0,
+      "feeCurrency": "AED"
+    }
+  ]
+}
+```
+</details>
+</td>
+</tr>
+<tr>
+<td> 16 </td>
+<td> Payment Callback to Fee Service from Purchase Service </td>
+<td>http://localhost:9081/fee-service/student-fee/status-update</td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "studentId": 1,
+  "totalAmount": 1642.0,
+  "paidAmount": 1000.00,
+  "studentFees": [
+    {
+      "studentFeeId": 1
+    },
+    {
+      "studentFeeId": 5
+    }
+  ]
+}
+```
+
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+
+```json
+[
+  {
+    "id": 1,
+    "studentId": 1,
+    "feeId": 2,
+    "status": "FULLY_PAID",
+    "amount": 809.0,
+    "paidAmount": 809.0,
+    "paidDate": "2024-05-07T17:02:57.717593+04:00",
+    "creationDate": "2024-05-07T16:26:57.560439+04:00",
+    "name": "MAY 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "dueDate": "2024-05-20T00:00:00+04:00"
+  },
+  {
+    "id": 5,
+    "studentId": 1,
+    "feeId": 1,
+    "status": "PARTIALLY_PAID",
+    "amount": 833.0,
+    "paidAmount": 191.0,
+    "paidDate": "2024-05-07T17:02:57.735432+04:00",
+    "creationDate": "2024-05-07T16:27:04.531788+04:00",
+    "name": "APR 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "dueDate": "2024-04-20T00:00:00+04:00"
+  }
+]
+```
+</details>
+</td>
+</tr>
 </table>
 
 
