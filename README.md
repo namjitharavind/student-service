@@ -51,11 +51,18 @@
 
 <table>
 <tr>
-<td> Order </td><td> Name </td> <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
+<td> Order </td>
+<td> Name </td>
+<td> URL </td>
+<td> HTTP Method </td>
+<td> Request </td>
+<td> Status </td>
+<td> Response </td>
 </tr>
 <tr>
 <td> 1 </td>
-<td> Get all students </td>
+<td> Get all students by Grade </td>
+<td> http://localhost:9080/student-service/student/grade/UKG </td>
 <td> GET </td>
 <td>  </td>
 <td> 200 </td>
@@ -99,6 +106,7 @@
 <tr>
 <td> 2 </td>
 <td> Get a Student By Id </td>
+<td> http://localhost:9080/student-service/student/1 </td>
 <td> GET </td>
 <td>  </td>
 <td> 200 </td>
@@ -119,6 +127,7 @@
 <tr>
 <td> 3 </td>
 <td> Get all Fees </td>
+<td>http://localhost:9081/fee-service/fee</td>
 <td> GET </td>
 <td>  </td>
 <td> 200 </td>
@@ -233,6 +242,7 @@
 <tr>
 <td> 2 </td>
 <td> Get a Fee By Id </td>
+<td>http://localhost:9081/fee-service/fee/1</td>
 <td> GET </td>
 <td>  </td>
 <td> 200 </td>
