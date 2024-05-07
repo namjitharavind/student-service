@@ -53,7 +53,16 @@
 |--------------|--------------|-------------|
 | 1            | http://localhost:9080/student-service/student/grade/UKG | GET | 
 
-#### Response Body :
+<table>
+<tr>
+<td> Order </td> <td> HTTP Method </td><td> Request </td><td> Status </td> <td> Response </td>
+</tr>
+<tr>
+<td> 1 </td>
+<td> GET </td>
+<td>  </td>
+<td> 200 </td>
+<td>
 
 ```json
 [
@@ -87,3 +96,15 @@
   }
 ]
 ```
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+#### Response Body :
+
+
