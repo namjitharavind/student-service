@@ -1,6 +1,6 @@
 # Student Service
 
-### Student are the main customer of a student management system.
+### Student management system is collection of microservice applications to full fill the school fee collection of multiple schools.
 
 ![img_6.png](img_6.png)
 
