@@ -688,6 +688,56 @@
 </details>
 </td>
 </tr>
+
+<tr>
+<td> 11 </td>
+<td> Get all Purchase By StudentId </td>
+<td>http://localhost:9082/purchase-service/purchase/student/1</td>
+<td> GET </td>
+<td> 
+
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+[
+  {
+    "id": "02179a18-88cb-48fd-a845-ef505a68a57b",
+    "studentId": 1,
+    "studentName": "Mahendra Singh Dhoni",
+    "schoolName": "Gems Legacy",
+    "totalAmount": 1642.0,
+    "customAmount": 1000.0,
+    "currency": "AED",
+    "creationDate": "2024-05-07T16:45:47.962866+04:00",
+    "paidDate": null,
+    "status": "CREATED",
+    "purchaseFees": [
+      {
+        "id": 1,
+        "feeId": 1,
+        "feeName": "MAY 2024 TUTION FEE",
+        "feeAmount": 809.0,
+        "feeCurrency": "AED"
+      },
+      {
+        "id": 2,
+        "feeId": 5,
+        "feeName": "APR 2024 TUTION FEE",
+        "feeAmount": 833.0,
+        "feeCurrency": "AED"
+      }
+    ]
+  }
+]
+```
+
+</details>
+</td>
+</tr>
 </table>
 
 
