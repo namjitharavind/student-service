@@ -13,3 +13,6 @@
 ### 2. Purchase Student fee
 #### After the assigning of the fees to students, they will get started seeing their fees. And students can purchase multiple available fees.
 ![img_7.png](img_7.png)
+
+### 3. Purchase Payment
+![img_8.png](img_8.png)
