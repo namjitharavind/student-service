@@ -118,7 +118,7 @@
 </tr>
 <tr>
 <td> 3 </td>
-<td> Get all fees </td>
+<td> Get all Fees </td>
 <td> GET </td>
 <td>  </td>
 <td> 200 </td>
@@ -226,6 +226,26 @@
     "dueDate": "2024-03-20T00:00:00+04:00"
   }
 ]
+```
+
+</td>
+</tr>
+<tr>
+<td> 2 </td>
+<td> Get a Fee By Id </td>
+<td> GET </td>
+<td>  </td>
+<td> 200 </td>
+<td>
+
+```json
+{
+  "type": "about:blank",
+  "title": "Bad Request",
+  "status": 400,
+  "detail": "Failed to convert 'id' with value: 'id'",
+  "instance": "/fee-service/fee/id"
+}
 ```
 
 </td>
