@@ -435,7 +435,7 @@
 </tr>
 
 <tr>
-<td> 7 </td>
+<td> 8 </td>
 <td> Create Purchase </td>
 <td>http://localhost:9082/purchase-service/purchase</td>
 <td> POST </td>
