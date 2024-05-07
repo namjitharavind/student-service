@@ -690,7 +690,7 @@
 </tr>
 
 <tr>
-<td> 11 </td>
+<td> 12 </td>
 <td> Get all Purchase By StudentId </td>
 <td>http://localhost:9082/purchase-service/purchase/student/1</td>
 <td> GET </td>
