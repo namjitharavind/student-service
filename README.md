@@ -16,3 +16,7 @@
 
 ### 3. Purchase Payment
 ![img_8.png](img_8.png)
+
+### 4. Payment Gateway Callback to Payment service
+![img_9.png](img_9.png)
+
