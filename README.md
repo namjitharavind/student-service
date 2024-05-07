@@ -116,6 +116,120 @@
 
 </td>
 </tr>
+<tr>
+<td> 3 </td>
+<td> Get all fees </td>
+<td> GET </td>
+<td>  </td>
+<td> 200 </td>
+<td>
+
+```json
+[
+  {
+    "id": 1,
+    "name": "APR 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-04-01T00:00:00+04:00",
+    "dueDate": "2024-04-20T00:00:00+04:00"
+  },
+  {
+    "id": 2,
+    "name": "MAY 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 809.0,
+    "creationDate": "2024-05-01T00:00:00+04:00",
+    "dueDate": "2024-05-20T00:00:00+04:00"
+  },
+  {
+    "id": 3,
+    "name": "JUN 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-06-01T00:00:00+04:00",
+    "dueDate": "2024-06-20T00:00:00+04:00"
+  },
+  {
+    "id": 4,
+    "name": "AUG 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-08-01T00:00:00+04:00",
+    "dueDate": "2024-08-20T00:00:00+04:00"
+  },
+  {
+    "id": 5,
+    "name": "SEP 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-09-01T00:00:00+04:00",
+    "dueDate": "2024-09-20T00:00:00+04:00"
+  },
+  {
+    "id": 6,
+    "name": "OCT 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-10-01T00:00:00+04:00",
+    "dueDate": "2024-10-20T00:00:00+04:00"
+  },
+  {
+    "id": 7,
+    "name": "NOV 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-11-01T00:00:00+04:00",
+    "dueDate": "2024-11-20T00:00:00+04:00"
+  },
+  {
+    "id": 8,
+    "name": "DEC 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-12-01T00:00:00+04:00",
+    "dueDate": "2024-12-20T00:00:00+04:00"
+  },
+  {
+    "id": 9,
+    "name": "JAN 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-01-01T00:00:00+04:00",
+    "dueDate": "2024-01-20T00:00:00+04:00"
+  },
+  {
+    "id": 10,
+    "name": "FEB 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-02-01T00:00:00+04:00",
+    "dueDate": "2024-02-20T00:00:00+04:00"
+  },
+  {
+    "id": 11,
+    "name": "MAR 2024 TUTION FEE",
+    "type": "TUTION",
+    "currency": "AED",
+    "amount": 833.0,
+    "creationDate": "2024-03-01T00:00:00+04:00",
+    "dueDate": "2024-03-20T00:00:00+04:00"
+  }
+]
+```
+
+</td>
+</tr>
 </table>
 
 
