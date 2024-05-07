@@ -433,6 +433,74 @@
 </details>
 </td>
 </tr>
+
+<tr>
+<td> 7 </td>
+<td> Create Purchase </td>
+<td>http://localhost:9082/purchase-service/purchase</td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": "48a85513-f081-497e-b402-2d7bd11caaf1",
+  "studentId": 1,
+  "studentName": "Mahendra Singh Dhoni",
+  "schoolName": "Gems Legacy",
+  "totalAmount": 1642.0,
+  "customAmount": 1642.0,
+  "currency": "AED",
+  "creationDate": "2024-05-06T15:46:04.299712+04:00",
+  "paidDate": null,
+  "status": "CREATED",
+  "purchaseFees": [
+    {
+      "id": 1,
+      "feeId": 1,
+      "feeName": "APR 2024 TUTION FEE",
+      "feeAmount": 833.0,
+      "feeCurrency": "AED"
+    },
+    {
+      "id": 2,
+      "feeId": 5,
+      "feeName": "MAY 2024 TUTION FEE",
+      "feeAmount": 809.0,
+      "feeCurrency": "AED"
+    }
+  ]
+}
+```
+
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": 1,
+  "studentId": 1,
+  "feeId": 1,
+  "status": "PENDING",
+  "amount": 833.0,
+  "paidAmount": null,
+  "paidDate": null,
+  "creationDate": "2024-05-06T15:45:35.031547+04:00",
+  "name": "APR 2024 TUTION FEE",
+  "type": "TUTION",
+  "currency": "AED",
+  "dueDate": "2024-04-20T00:00:00+04:00"
+}
+```
+
+</details>
+</td>
+</tr>
 </table>
 
 
