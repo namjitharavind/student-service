@@ -402,6 +402,37 @@
 </details>
 </td>
 </tr>
+<tr>
+<td> 7 </td>
+<td> Get Students Fee By Id </td>
+<td>http://localhost:9081/fee-service/student-fee/1</td>
+<td> GET </td>
+<td>  </td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": 1,
+  "studentId": 1,
+  "feeId": 1,
+  "status": "PENDING",
+  "amount": 833.0,
+  "paidAmount": null,
+  "paidDate": null,
+  "creationDate": "2024-05-06T15:45:35.031547+04:00",
+  "name": "APR 2024 TUTION FEE",
+  "type": "TUTION",
+  "currency": "AED",
+  "dueDate": "2024-04-20T00:00:00+04:00"
+}
+```
+
+</details>
+</td>
+</tr>
 </table>
 
 
