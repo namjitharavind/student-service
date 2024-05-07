@@ -51,7 +51,7 @@
 #### Students are already added through data.sql.
 | Order        | API URL      | HTTP METHOD |  
 |--------------|--------------|-------------|
-| 1            | http://localhost:9080/student-service/student/grade/UKG | GET | ds           | sds           |
+| 1            | http://localhost:9080/student-service/student/grade/UKG | GET | 
 
 #### Response Body :
 
