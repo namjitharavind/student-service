@@ -738,6 +738,61 @@
 </details>
 </td>
 </tr>
+<tr>
+<td> 13 </td>
+<td> Process Payment </td>
+<td>http://localhost:9083/payment-service/payment</td>
+<td> POST </td>
+<td> 
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "studentId": 1,
+  "purchaseId": "02179a18-88cb-48fd-a845-ef505a68a57b",
+  "paymentMethod": "CREDIT_DEBIT_CARD",
+  "creditCard":{
+    "number":"4177771158070077",
+    "expiry":"02/27",
+    "cvv":"123",
+    "holderName":"Namjith Aravind",
+    "type":"VISA"
+  }
+}
+```
+
+</details>
+</td>
+<td> 200 </td>
+<td>
+<details close>
+  <summary>Json</summary>
+
+```json
+{
+  "id": "d38e4fcc-c911-4a6e-bcec-37d0b620d92d",
+  "studentId": "1",
+  "purchaseId": "02179a18-88cb-48fd-a845-ef505a68a57b",
+  "transactionReference": "1dae7e34-8f0d-4a3c-93f7-483a199d5e8c",
+  "status": "NOT_YET_STARTED",
+  "amount": 1000.0,
+  "currency": "AED",
+  "paymentMethod": "CREDIT_DEBIT_CARD",
+  "transactionDate": "2024-05-07T17:02:47.226433+04:00",
+  "creditCard": {
+    "number": "4177771158070077",
+    "expiry": "02/27",
+    "cvv": "123",
+    "holderName": "Namjith Aravind",
+    "type": "VISA"
+  }
+}
+```
+
+</details>
+</td>
+</tr>
 </table>
 
 
