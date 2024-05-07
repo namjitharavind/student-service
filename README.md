@@ -115,6 +115,7 @@
 <td>
 <details close>
   <summary>Json</summary>
+
 ```json
 {
   "id": 1,
